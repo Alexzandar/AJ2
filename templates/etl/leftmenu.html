@@ -1,0 +1,70 @@
+<aside>
+	<div id="sidebar"  class="nav-collapse ">
+		<!-- sidebar menu start-->
+		<ul class="sidebar-menu" id="nav-accordion">
+			
+				<li {% if 'masters/variants' in request.path %}class="active"{% endif %}>
+					<a  href="/actionbot/masters/variants">
+						<i class="fa fa-book" aria-hidden="true"></i><span> Variant Management</span>
+					</a>
+				</li>
+			<!-- <li>
+				<a href="/actionbot/index/">
+					<i class="fa fa-dashboard"></i>
+					<span>Dashboard</span>
+				</a>
+			</li> -->
+			<li class="sub-menu">
+				<a href="javascript:;" class="dcjq-parent active">
+					<i class="fa fa-user"></i>
+					<span>Masters Data</span>
+				</a>
+				<ul class="sub">
+					<li {% if 'masters/customers' in request.path %}class="active"{% endif %}>
+						<a  href="/actionbot/masters/customers">Customers</a>
+					</li>
+					
+					
+					<li {% if 'masters/t-codes' in request.path %}class="active"{% endif %}>
+						<a  href="/actionbot/masters/t-codes">Automation Library</a>
+					</li>
+					<li {% if 'masters/erp' in request.path %}class="active"{% endif %}>
+						<a  href="/actionbot/masters/erp">ERP</a>
+					</li>
+					<li {% if 'settings/remote' in request.path %}class="active"{% endif %}><a  href="/actionbot/settings/remote">API Settings</a></li>
+					<li {% if 'masters/t-code-category' in request.path %}class="active"{% endif %}><a  href="/actionbot/masters/t-code-category">T Code Category</a></li>
+				</ul>
+			</li>
+			<li class="sub-menu">
+				<a href="javascript:;" class="dcjq-parent active">
+					<i class="fa fa-cog"></i>
+					<span>Settings</span>
+				</a>
+				<ul class="sub">
+					<li {% if 'settings/sap' in request.path %}class="active"{% endif %}><a  href="/actionbot/settings/schedule">BOT Scheduler</a></li>
+					<!-- <li {% if 'settings/oracle' in request.path %}class="active"{% endif %}><a  href="/actionbot/masters/customers">Account Settings</a></li>
+					<li {% if 'settings/sap' in request.path %}class="active"{% endif %}><a  href="/actionbot/masters/customers">Notification Settings</a></li> -->
+
+					
+				</ul>
+			</li>
+			<li class="sub-menu">
+					<a href="javascript:;" class="dcjq-parent active">
+						<i class="fa fa-cog"></i>
+						<span>Output</span>
+					</a>
+					<ul class="sub">
+						<li {% if 'masters/logs' in request.path %}class="active"{% endif %}><a  href="/actionbot/masters/logs">View BOT Output</a></li>
+	
+					</ul>
+				</li>
+			<li>
+				<a  href="/actionbot/login/">
+					<i class="fa fa-lock"></i>
+					<span>Logout</span>
+				</a>
+			</li>
+		</ul>
+		<!-- sidebar menu end-->
+	</div>
+</aside>

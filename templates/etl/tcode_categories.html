@@ -1,0 +1,279 @@
+{% extends "etl/base.html" %}
+
+{% block additional_styles %}
+<link href="/static/etl/css/bootstrap-datepicker.css" rel="stylesheet">
+<style type="text/css">
+	.datepicker {
+		border: 1px solid #e2e2e4;
+	}
+
+	.CboDesTool {
+		width: 160px;
+	}
+
+	.center {
+		text-align: center;
+	}
+
+	.modal-dialog-big {
+		width: 1024px;
+	}
+	td{
+		border-top: 0 !important;
+	}
+	.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<div  ng-app="todoApp" ng-controller="CustomerController">
+<div class="col-lg-12">
+	<section class="panel">
+		<header class="panel-heading">
+			Customer List
+			<button class="btn btn-primary pull-right" onclick="addCustomerForm()">Add New</button>
+		</header>
+		<div class="panel-body">
+			<div class="col-sm-3 pull-right row">
+				<form method="GET" action="/actionbot/masters/customers">
+					<div class="form-inline">
+						<span class="pull-right">
+							<input type="text" placeholder="Search" name="search" class="form-control"
+								required="required" value="{{ query }}" />
+							<button class="btn btn-warning btn-sm" type="submit" id="searchErp"><span
+									class="glyphicon glyphicon-search"></span></button>
+							<a class="btn btn-sm btn-warning" href="/actionbot/masters/customers" title="Refresh"><span
+									class="glyphicon glyphicon-refresh"></span> </a>
+						</span>
+					</div>
+				</form>
+			</div>
+			<table class="table table-striped table-hover table-bordered" id="clientMaster">
+				<thead>
+					<tr>
+						<th>Sl. No.</th>
+						<th>Category Name</th>
+						<th>
+							<center>Actions</center>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+						{% for category in categories %}
+						<tr>
+							<td>{{forloop.counter}}</td>
+							<td>{{ category.cat_name }}</td>
+							<td class="hide">{{ category.id }}</td>
+							<td>
+								<center><a class="btn btn-xs btn-primary btnEdit" title="Edit"
+										rel="{{ cnt.client_id }}"><span class="glyphicon glyphicon-edit"></span></a> <a
+										class="btn btn-xs btn-danger btnDel"
+										href="/actionbot/masters/category-delete/{{ category.id }}" title="Delete"><span
+											class="glyphicon glyphicon-trash"></span> </a></center>
+							</td>
+						</tr>
+						{% endfor %}
+	
+						{% if not categories %}
+						<tr>
+							<td colspan="5">
+								<div class="col-md-12 center"> No records found!</div>
+							</td>
+						</tr>
+						{% endif %}
+					</tbody>
+				</table>
+	
+	
+				<div class="text-center">
+					{% if categories.has_other_pages %}
+					<ul class="pagination">
+						{% if categories.has_previous %}
+						<li><a href="?page={{ categories.previous_page_number }}">&laquo;</a></li>
+						{% else %}
+						<li class="disabled"><span>&laquo;</span></li>
+						{% endif %}
+						{% for i in categories.paginator.page_range %}
+						{% if categories.number == i %}
+						<li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+						{% else %}
+						<li><a href="?page={{ i }}">{{ i }}</a></li>
+						{% endif %}
+						{% endfor %}
+						{% if categories.has_next %}
+						<li><a href="?page={{ categories.next_page_number }}">&raquo;</a></li>
+						{% else %}
+						<li class="disabled"><span>&raquo;</span></li>
+						{% endif %}
+					</ul>
+					{% endif %}
+				</div>
+
+
+		</div>
+	</section>
+</div>
+
+
+
+<input type="hidden" id="HdnCid" />
+
+<div class="modal fade " data-backdrop="static" data-keyboard="false" id="myModal" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h5 class="modal-title">Cadency - Manage Customers</h5>
+			</div>
+			<div class="modal-body">
+
+			</div>
+			<div class="modal-footer footer-button">
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal popup for editing the customer information -->
+<div class="modal fade " data-backdrop="static" data-keyboard="false"
+ id="editCustomerModal" tabindex="-1" role="dialog"
+	aria-labelledby="editCustomerModal" aria-hidden="true">
+	<div class="modal-dialog" >
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h5 class="modal-title">T Code Category</h5>
+			</div>
+			<form class="form-horizontal" role="form" method="post" id="tCodeCategoryForm" action="/actionbot/masters/save-category">
+				<div class="modal-body">
+					<div class="row"  style="margin-top: 20px;">
+								<section class="panel">
+									<div class="col-md-3">
+									{% csrf_token %}
+										<input type="hidden" name="cat_id" id="cat_id" class="form-control">
+										<label class="control-label" for="category_name">Category Name</label>
+										</div>
+										<div class="col-md-8">
+										<input type="text" id="cat_name" name="cat_name" class="form-control" required>
+									</div>
+								</section>
+					</div>
+
+
+				</div>
+				<div class="modal-footer footer-button">
+					<button type="submit" class="btn btn-primary" id="btnSave">SAVE</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+  </div>
+  </div>
+<!-- Customer information edit popup ends here -->
+{% endblock %}
+
+
+{% block jsfooter %}
+
+<script type="text/javascript">
+	// Popup when clicking the add new customer button
+	function addCustomerForm() {
+		document.getElementById("tCodeCategoryForm").reset();
+		$("#cat_id").val('');
+		$('#editCustomerModal').modal();
+	}
+
+var frm = $('#tCodeCategoryForm');
+
+	frm.submit(function (e) {
+		e.preventDefault();
+		var cat_id = $("#cat_id").val();
+		var cat_name = $("#cat_name").val();
+		
+		var obj = {
+			categoryId: cat_id,
+			categoryName: cat_name
+		};
+
+		$("#btnSave span").html('Please wait');
+
+		$("#btnSave").attr("disabled", "disabled");
+
+		var formdata = JSON.stringify(obj);
+		$.ajaxSetup({
+    beforeSend: function(xhr, settings) {
+            xhr.setRequestHeader("X-CSRFToken", $('input[name="csrfmiddlewaretoken"]').attr('value'));
+    }
+});
+		$.ajax({
+			type: "POST",
+			url: "/actionbot/masters/save-category/",
+			data: obj,
+			dataType: 'json',
+			success: function (response) {
+				if (response.status == "200") {
+
+					$("#editCustomerModal").modal('hide');
+					$('#myModal .modal-body').html(response.message);
+					$('#myModal .footer-button').html('<button class="btn btn-success" data-dismiss="modal" type="button" onclick=reload_window()>Close</button>');
+					$('#myModal').modal();
+
+
+				} else if (response.status == "400") {
+					$('#myModal .modal-body').html(response.message);
+					$('#myModal .footer-button').html('<button class="btn btn-danger" data-dismiss="modal" type="button">Close</button>');
+					$('#myModal').modal();
+
+				}
+				$("#btnSave").removeAttr('disabled');
+				$("#btnSave span").html('Save');
+			}
+		});
+	});
+
+	$(document).ready(function () {
+		$(document).on("click", ".btnEdit", function () {
+			var id = $(this).parents("tr").find("td:eq(2)").html();
+			$("#cat_id").val(id);
+			$("#cat_name").val($(this).parents("tr").find("td:eq(1)").html());
+			$('#editCustomerModal').modal();
+		});
+	});
+	function reload_window() {
+		window.location = '';
+	}
+
+	$(".btnDel").click(function (e) {
+		e.preventDefault();
+		var link = $(this).attr('href');
+
+		if (confirm("Delete this record..Are you Sure ?")) {
+			window.location = link;
+		}
+	});
+
+
+</script>
+{% endblock %}

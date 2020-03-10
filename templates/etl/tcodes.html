@@ -1,0 +1,112 @@
+{% extends "etl/base.html" %}
+
+{% block content %}
+<section class="panel">
+    <header class="panel-heading  m-bot15">
+      Automation Library
+			<a class="btn btn-primary pull-right" href="/actionbot/masters/t-code/create">Add New</a>
+    </header>
+    <div class="panel-body">
+<div class="col-lg-12">
+    <ul class=tree>
+    <li>
+      <span class="expander-li">SAP ECC</span>
+      <div class="expander expanded"></div>
+      <ul class="expanded">
+        <li>
+            <span class="expander-li">General</span>
+          <div class="expander expanded"></div>
+          <ul class="expanded">
+              {% for key, item in data.items %}
+            <li>
+                <span class="expander-li">{{key}} - {{item.Report}}</span>
+                <div class="expander"></div>
+                <ul>  
+                    {% for item1 in data.KE5Z.ValueTab %}   
+                  <li>{{item1.SelName}}</li>  
+                  {% endfor %}
+                </ul>
+              </li>
+                {% endfor %}
+          </ul>
+        </li>
+        <li>
+            <span class="expander-li">Fixed Asset</span>
+          <div class="expander expanded"></div>
+          <ul class="expanded">
+            <li>FAGL_FC_VAL - FAGL_FC_VALUATION
+              </li>
+            <li>FAGL_FC_TRANS - FAGL_FC_TRANSLATION</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+        <span class="expander-li">S/4 Hana</span>
+        <div class="expander"></div>
+        <ul>
+          <li>
+              <span class="expander-li">Fixed Asset</span>
+            <div class="expander"></div>
+            <ul>
+              <li>F13E - SAPF124</li>
+              <li>AFAB - RAPOST2000</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </li>
+    <li>
+        <span class="expander-li">Oracle</span>
+        <div class="expander"></div>
+        <ul>
+          <li>
+              <span class="expander-li">Fixed Asset</span>
+            <div class="expander"></div>
+            <ul>
+              <li>FADR - FA Derpeciation Run</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+  </ul>
+</div>
+</div>
+</section>
+
+{% endblock %}
+
+
+{% block jsfooter %}
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".btnEdit").click(function () {
+
+      var id = $(this).attr('rel');
+      $('#erpid').val(id);
+      $('#erpname').val($(this).closest('tr').find("td:eq(0)").text());
+      $('#erpdesc').val($(this).closest('tr').find("td:eq(1)").text());
+
+
+      $("#myModal").modal({
+
+        keyboard: false
+
+      });
+
+    });
+
+    $(".btnDel").click(function (e) {
+      e.preventDefault();
+      var link = $(this).attr('href');
+
+      if (confirm("Delete this record..Are you Sure ?")) {
+        window.location = link;
+      }
+    });
+
+  });
+
+</script>
+
+{% endblock %}

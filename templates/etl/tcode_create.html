@@ -1,0 +1,247 @@
+{% extends "etl/base.html" %}
+
+{% block additional_styles %}
+<style type="text/css">
+  .datepicker {
+    border: 1px solid #e2e2e4;
+  }
+
+  .CboDesTool {
+    width: 160px;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .variant-container .form-group {
+    margin-bottom: 20px;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="panel">
+  <header class="panel-heading  m-bot15">
+    Automation Library
+    <a class="btn btn-primary pull-right" href="/actionbot/masters/t-codes">Back</a>
+  </header>
+  <form method="POST" id="tcodeCreateForm">
+    <div class="panel-body">
+      <div class="col-md-10 variant-container">
+        <div class="col-md-5">
+
+          <div class="form-group">
+            <label class="control-label" for="srcerp"> ERP</label>
+
+            <select class="form-control" name="ERP" id="ERP">
+              {% for erp in erps%}
+              <option value="{{erp.id}}">{{erp.erp_name}}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="form-group" style="position: relative;">
+            <label class="control-label" for="srcerp"> T Code</label>
+
+            <input type="text" class="form-control" style="width: 80%;">
+            <!-- <input type="text" class="form-control typeahead" style="width: 80%;"> -->
+            <a href="" class="get-data" style="position: absolute;right: 0;bottom: 3px;" data-type="tcode">Get Data</a>
+          </div>
+
+        </div>
+        <div class="col-md-5">
+          <div class="form-group">
+            <label class="control-label" for="srcerp"> T Code Name</label>
+
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group" style="position: relative;">
+            <label class="control-label" for="srcerp"> Program Name</label>
+
+            <input type="text" class="form-control" style="width: 80%;">
+            <a href="" class="get-data" style="position: absolute;right: 0;bottom: 3px;" data-type="program">Get Data</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-10 table-container" style="padding-top: 20px;display: none;">
+        <table class="table table-striped table-hover table-bordered" id="clientMaster">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Is Required</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table_row">
+              <td>1</td>
+              <td>
+                <select class="form-control">
+                  <option>P_BURKS</option>
+                </select>
+              </td>
+              <td>
+                <select class="form-control">
+                  <option>P</option>
+                </select>
+              </td>
+              <td>
+                &nbsp;
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+      <div class="col-md-12"><button type="submit" class="btn btn-primary pull-right row"
+          style="width: 60px;margin-top: 5px;margin-right: 0;">SAVE</button>
+      </div>
+    </div>
+  </form>
+</section>
+
+{% endblock %}
+
+
+{% block jsfooter %}
+<script type="text/javascript">
+  var current_fields
+  $(document).ready(function () {
+    $.ajaxSetup({
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    }
+});
+    $.ajax({
+			type: "POST",
+			url: "https://dfw.actionfi.com:50443/RESTAdapter/RPA/ReadScreenFields",
+			data: {
+				"Option": "T",
+        "Value": "ASKB"
+
+      },
+      
+    username: "picommon", 
+    password: "dpo@2016",
+			dataType: 'json',
+			success: function (response) {
+				if (response.Return == "Sucess.") {
+          screen_fields = response.ValueTab;
+          console.log(screen_fields);
+}
+			},
+      error: function(e){
+        console.log(e);
+      }
+		});
+    var substringMatcher = function (strs) {
+      return function findMatches(q, cb) {
+        var matches, substringRegex;
+
+        // an array that will be populated with substring matches
+        matches = [];
+
+        // regex used to determine if a string contains the substring `q`
+        substrRegex = new RegExp(q, 'i');
+
+        // iterate through the pool of strings and for any string that
+        // contains the substring `q`, add it to the `matches` array
+        $.each(strs, function (i, str) {
+          if (substrRegex.test(str)) {
+            matches.push(str);
+          }
+        });
+
+        cb(matches);
+      };
+    };
+
+    var states = ['KE5Z', 'KKAI', 'KKAJ', 'CJI5', 'KE5B',
+      'F13E', 'F.13', 'FAGLF101', 'FAGL_FCV', 'AFBP', 'AFAB', 'CJI3'
+    ];
+    var screen_fields;
+    $.getJSON("/static/etl/data/screen_fields.json", function (json) {
+      // screen_fields = json;
+    });
+
+    $('.typeahead').typeahead({
+      hint: true,
+      highlight: true,
+      minLength: 1
+    },
+      {
+        name: 'states',
+        source: substringMatcher(states)
+      });
+    $('.typeahead').on('typeahead:selected', function (evt, item) {
+      // do what you want with the item here
+      current_fields = screen_fields[item];
+      if (current_fields) {
+        // generate the table for screen fields here
+        $("#clientMaster > tbody tr").remove();
+        var sel_values = current_fields.ValueTab.map(a => a.SelName);
+        $.each(current_fields.ValueTab, function (index, value) {
+          // if (value.Obligatory) {
+          $('#clientMaster > tbody:last-child').append('<tr class="table_row">\
+            <td>1</td>\
+            <td>'+value.SelName+'</td>\
+            <td>'+value.Kind+'</td>\
+            <td>'+value.Obligatory+'</td>\
+          </tr>');
+          // }
+        });
+
+        addSerialNumber();
+        $(".table-container").show();
+
+        $("html").getNiceScroll().resize();
+      }
+    })
+
+
+    function addSerialNumber() {
+      $('table tr').each(function (index) {
+        $(this).find('td:nth-child(1)').html(index);
+      });
+    }
+
+    addSerialNumber();
+
+    $( "#tcodeCreateForm" ).submit(function( event ) {
+      console.log(JSON.parse($("form").serialize()))
+  event.preventDefault();
+});
+  });
+
+  $( ".get-data" ).click(function( event ) {
+    var type = $(this).data('type');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+  	
+
+    event.preventDefault();
+
+});
+
+</script>
+
+{% endblock %}

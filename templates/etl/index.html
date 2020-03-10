@@ -1,0 +1,104 @@
+{% extends "etl/base.html" %}
+
+{% block content %}
+       
+ <!-- page start-->
+ <div class="col-lg-12">
+ 
+                       <div class="row">
+                          <div class="col-lg-12">
+                              <section class="panel">
+                                  <div class="panel-body">
+                                      <ul class="summary-list">
+                                          <li>
+                                              <a href="javascript:;">
+                                                  <i class=" fa fa-shopping-cart text-primary"></i>
+                                                  6 Clients
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="javascript:;">
+                                                  <i class="fa  fa-file-text text-info"></i>
+                                                  72 Extractors
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="javascript:;">
+                                                  <i class=" fa  fa-check-square-o text-success"></i>
+                                                  64 Successful
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="javascript:;">
+                                                  <i class="fa fa-warning text-danger"></i>
+                                                  2 Error
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="javascript:;">
+                                                  <i class="fa fa-calendar text-danger"></i>
+                                                  6 Scheduled
+                                              </a>
+                                          </li>
+										  
+                                      </ul>
+                                  </div>
+                              </section>
+                          </div>
+                      </div>
+              <div class="tab-pane" id="chartjs">
+                  <div class="row">
+                      <div class="col-lg-6">
+                          <section class="panel">
+                              <header class="panel-heading">
+                                    Transformation Status
+                              </header>
+                              <div class="panel-body text-center" >
+                                  <canvas id="pie" height="300" width="400"></canvas>
+                              </div>
+                              
+                          </section></div>
+                     
+                      <div class="col-lg-6">
+                          <section class="panel">
+                              <header class="panel-heading">
+                                 Incoming Files
+                              </header>
+                               <div class="panel-body text-center">
+                                  <canvas id="pie" height="300" width="400"></canvas>
+                              </div>
+                          </section>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-lg-6">
+                          <section class="panel">
+                              <header class="panel-heading">
+                                  Successful Transformation
+                              </header>
+                              <div class="panel-body text-center">
+                                  <canvas id="radar" height="300" width="400"></canvas>
+                              </div>
+                          </section>
+                      </div>
+                      <div class="col-lg-6">
+                          <section class="panel">
+                              <header class="panel-heading">
+                                  Scheduled Tasks
+                              </header>
+                              <div class="panel-body text-center">
+                                  <canvas id="polarArea" height="300" width="400"></canvas>
+                              </div>
+                          </section>
+                      </div>
+                  </div>
+
+              </div>
+</div>
+              <!-- page end-->
+
+
+
+{% load staticfiles %} 
+
+{% endblock %}

@@ -1,0 +1,143 @@
+{% extends "etl/base.html" %}
+
+{% block content %}
+ 
+<div class="col-lg-12">
+    <section class="panel">
+        <header class="panel-heading  m-bot15">
+            Extractor Transformation Process
+        </header>
+        <div class="panel-body">
+
+		
+		
+            <form class="form-horizontal" role="form" name="frmProcess">
+                {% csrf_token %}
+				<div class="col-lg-12">
+					<div class="form-group">
+						<div class="row">
+
+							<div class="col-lg-4">
+
+								<label class="control-label" for="clientname">Select Client</label>
+								 <select class="form-control m-bot10" name="client" id="clientId">
+                            {% for row in clients %}
+                            <option value="{{ row.client_id }}">{{ row.client_name }} </option>
+                            {% endfor %}
+                        </select>
+
+							</div>
+
+							<div class="col-lg-4">
+
+								<label class="control-label" for="sourcefile">Extractor</label>
+												 <select class="form-control m-bot10" name="extid" id="extId">
+                            {% for row in df %}
+                            <option value="{{ row.dest_file_id }}">{{ row.dest_file_name }} </option>
+                            {% endfor %}
+                        </select>
+
+							</div>
+														<div class="col-lg-4">
+
+								<label class="control-label" for="toolname">Destination Tool</label>
+											 <select class="form-control m-bot10" name="tool_id" id="tool_id">
+                            {% for row in dt %}
+                            <option value="{{ row.tool_id }}">{{ row.tool_name }} </option>
+                            {% endfor %}
+                        </select>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-12">
+					<div class="form-group">
+						<div class="row">
+						<div class="col-lg-12 text-center">
+							
+							<button type="button" class="btn btn-primary" id="btnProcess" ><i class="fa fa-files-o"></i> Start Process</button>
+							</div
+						</div>
+					</div>
+				</div>
+            </form>
+
+        </div>
+		<div class="col-lg-12 text-center">
+		                           
+	<img src="/static/etl/img/loader1.gif" id="imgloader"  style="visibility:hidden"	/>
+	
+							  </div>
+							  <div class="col-lg-12">
+							  <div id="alertbox">                             
+                                
+                              </div>
+							  </div>
+							  
+</div>
+    </section>
+</div>
+
+{% endblock %}
+
+
+{% block jsfooter %}
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#btnProcess").click(function() {
+        var var1 = $('#clientId').val();
+        var var2 = $('#extId').val();
+        var var3 = $('#tool_id').val();
+        $('#imgloader').css('visibility', 'visible');
+
+        $('#alertbox').html("");
+        $("#msg").addClass('alert-info');
+        $("#msg").html('<i class="fa fa-spinner fa-spin fa-2x"></i>&nbsp;&nbsp;Wait...ETL Process is going on..');
+        $.ajax({
+            type: "POST",
+            url: "/uac/process/test/",
+            data: {
+                client: var1,
+                destfile: var2,
+                tool: var3,
+                csrfmiddlewaretoken: document.getElementsByName('csrfmiddlewaretoken')[0].value
+            },
+            dataType: 'json',
+            success: function(response) {
+                setTimeout(function() {
+
+                    var objMsg = response.message;
+
+
+                    for (i = 0; i < objMsg.length; i++) {
+                        if (objMsg[i].status == '200') {
+                            $('#alertbox').append('<div class="alert alert-success">  <i class="fa  fa-check-square-o fa-2x"></i>&nbsp;&nbsp;<strong>' + objMsg[i].filename + '</strong>:&nbsp;&nbsp;' + objMsg[i].message + '</div>');
+
+                        } else if (objMsg[i].status == '400') {
+                            errors = '<br />';
+                            $.each(objMsg[i].message, function(k, v) {
+                                $.each(objMsg[i].message[k], function(a, b) {
+                                    errors = errors + '&nbsp;&nbsp; -' + b + '<br />'
+                                });
+                            });
+                            $('#alertbox').append('<div class="alert alert-danger">  <i class="fa fa-exclamation-triangle fa-2x"></i>&nbsp;&nbsp;<strong>' + objMsg[i].filename + '</strong>:&nbsp;&nbsp;' + errors + '</div>');
+
+
+                        }
+
+                        $('#imgloader').css('visibility', 'hidden');
+
+                    }
+                }, 500);
+
+            }
+        });
+
+        return false;
+    });
+});
+</script>
+
+ {% endblock %}

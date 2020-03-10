@@ -1,0 +1,4348 @@
+{"KE5Z":{
+    "Report": "RCOPCA02",
+    "Return": "Sucess.",
+    "ValueTab": [
+        {
+            "SelName": "ACTIV",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "AFABE",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ARC_OBJ",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "BUKRS",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "DOCCT",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "DOCNR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "DRCRK",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "EPRCTR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "HRKFT",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "KOKRS",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "KOSTL",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "LOG_GRP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "LR_FILES",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "MATNR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "NO_RRINT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "POPER",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "PPRCTR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "PRCTR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_VARI",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "RACCT",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "RASSC",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "READ_AR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "READ_AS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "READ_DB",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "REFDOCCT",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "REFDOCNR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "REPMATNR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "RFAREA",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "RHOART",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "RLDNR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "RMVCT",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "RRCTY",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "RSCOPE",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "RTCUR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "RUNIT",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "RVERS",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "RYEAR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "SBUKRS",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "SFAREA",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "SHOART",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "STAGR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "VERSA",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WERKS",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        }
+    ]
+},
+ "KKAI":{
+    "Report": "SAPKKA01",
+    "Return": "Sucess.",
+    "ValueTab": [
+        {
+            "SelName": "ABGRJAHR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": "X"
+        },
+        {
+            "SelName": "ABGRMONA",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": "X"
+        },
+        {
+            "SelName": "ABGRNORM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ABGRPLAN",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ABGRTEST",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ABGRVERS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": "X"
+        },
+        {
+            "SelName": "ACTIONLG",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ANZEABGS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ANZEFIBU",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ANZEIGEN",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ANZWBUKR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ANZWKOKR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ERGPROT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "FIBUKONT",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "JOBPLANG",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "KOKRS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ORG_REP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_A_VARI",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_NO0VAL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_SUPANZ",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_SUPPIN",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "RFCGROUP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "RFCPROC",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "STOREMSG",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "TCODE",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_OKEY",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_WITEM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_WLIST",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WITHIMSG",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WROBJFRC",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ZEITFIBU",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        }
+    ]
+},
+ "KKAJ":{
+    "Report": "SAPKKA00",
+    "Return": "Sucess.",
+    "ValueTab": [
+        {
+            "SelName": "ABGRJAHR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": "X"
+        },
+        {
+            "SelName": "ABGRMONA",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": "X"
+        },
+        {
+            "SelName": "ABGRNORM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ABGRPLAN",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ABGRTEST",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ABGRVERS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": "X"
+        },
+        {
+            "SelName": "ACTIONLG",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ANZEABGS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ANZEFIBU",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ANZEIGEN",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ANZWBUKR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ANZWKOKR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ERGPROT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "FIBUKONT",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "JOBPLANG",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "KOKRS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ORG_REP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_A_VARI",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_NO0VAL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_SUPANZ",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_SUPPIN",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "RFCGROUP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "RFCPROC",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "STOREMSG",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "TCODE",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_OKEY",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_WITEM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_WLIST",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WITHIMSG",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WROBJFRC",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ZEITFIBU",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        }
+    ]
+},
+ "CJI5":{
+    "Report": "RKPEP005",
+    "Return": "Sucess.",
+    "ValueTab": [
+        {
+            "SelName": "CN_ACTVT",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_AKTDT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_AMODI",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_ARCDT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_ARCHV",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_COREP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_DBDAT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_HIEKZ",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_IMPRP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_IMTP",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_IMTPJ",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_KOKRS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_MATNR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_MAXL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_NETNR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_PROFD",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_PROFP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_PROJN",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_PSPNR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_SELKY",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_SELVS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_STAT1",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_STAT2",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_STAT3",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_STAT4",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_STD",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_STUFE",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_SUBKZ",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_VBELN",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_VERDT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_VIEW",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_VSEL1",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_VSEL2",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_VSNMR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "G_TNAME",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "G_VALUES",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "G_WRTTP",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "KOAGR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_ACTVRS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_AROBJ",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_DISVAR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_FIXVAR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_INFSYS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_ITEM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_MAXSEL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_NOZERO",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_OBJ",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_OPEN",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_TCODE",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_USEAR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_USEDB",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_VALTYP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "R_ARSEL",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "R_KSTAR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "R_OBDAT",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        }
+    ]
+},
+"KE5B":{
+    "Report": "RECPCA04",
+    "Return": "Sucess.",
+    "ValueTab": [
+        {
+            "SelName": "PREF_PCA",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_KOKRS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_VERSN",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": "X"
+        },
+        {
+            "SelName": "SUFF_PCA",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        }
+    ]
+},
+"F13E":{
+    "Report": "SAPF124",
+    "Return": "Sucess.",
+    "ValueTab": [
+        {
+            "SelName": "AUGDT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "BMONAT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "BUKRX",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "DOCNR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "GJAHX",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "KONTD",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "KONTK",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "KONTS",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "MIN_BEL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "POSTDATE",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "PZBSISGR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_LG",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "SHBKD",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "SHBKK",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "SO_ZUONR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_OKEY",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_WITEM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_WLIST",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "XAUGDT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "XAUSBEL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "XAUSLW",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "XNAUSBEL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "XNKON",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "XSOBEBVK",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "XSOBWERE",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "XTOL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "XTOLEB",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "X_AVISD",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "X_FEHLER",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "X_KUNNR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "X_LGCLR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "X_LIFNR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "X_SAKNR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "X_SHBKN",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "X_SHBLF",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "X_TESTL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ZWAERS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        }
+    ]
+},
+ "F.13":{
+    "Report": "SAPF124",
+    "Return": "Sucess.",
+    "ValueTab": [
+        {
+            "SelName": "AUGDT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "BMONAT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "BUKRX",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "DOCNR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "GJAHX",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "KONTD",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "KONTK",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "KONTS",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "MIN_BEL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "POSTDATE",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "PZBSISGR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_LG",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "SHBKD",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "SHBKK",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "SO_ZUONR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_OKEY",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_WITEM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_WLIST",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "XAUGDT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "XAUSBEL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "XAUSLW",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "XNAUSBEL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "XNKON",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "XSOBEBVK",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "XSOBWERE",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "XTOL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "XTOLEB",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "X_AVISD",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "X_FEHLER",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "X_KUNNR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "X_LGCLR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "X_LIFNR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "X_SAKNR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "X_SHBKN",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "X_SHBLF",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "X_TESTL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "ZWAERS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        }
+    ]
+},
+"FAGLF101":{
+    "Report": "FAGL_CL_REGROUP",
+    "Return": "Sucess.",
+    "ValueTab": [
+        {
+            "SelName": "AKONTO",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "BELNR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "BUKRS",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "DKONTO",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "DK_UMSKZ",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "DK_WBRSL",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "FS_NUM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "GESBER",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "INV_KZ",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "KKONTO",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "KK_UMSKZ",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "KONTOART",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "PAR_BI",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "PAR_BNAM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "PA_TWAER",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "PA_WAERS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_BBUDAT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_BBUPEM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_BKTXT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_BLART",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_BLDAT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_BWBER",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_CHG_AC",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_CURTP1",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_DSALDO",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_FILE",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_FLNAM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_KSALDO",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_LCOLL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_LVAR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_LVARS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_METHD",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_SBLART",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_SBUDAT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_SBUPEM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_SSALDO",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_VBUND",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_ZBUKRS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_ZUONR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "SKONTO",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "STICHTAG",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "TITLE",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "UMBWM",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "VERBUND",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_OKEY",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_WITEM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_WLIST",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WV_BWERT",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        }
+    ]
+},
+ "FAGL_FCV":{
+    "Report": "FAGL_FCV",
+    "Return": "Sucess.",
+    "ValueTab": [
+        {
+            "SelName": "P_0119",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_ALTACT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_APOI",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_AROI",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_BALREV",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_BALVAL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_BAL_IS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_BAL_MV",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_BAL_PB",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_BAL_TL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_COMPO",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_CPROG",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_CURR_C",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_DEL_DY",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_DEL_YE",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_DOC_C",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_DOREM2",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_DOREM3",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_FNAME",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_GLGSOI",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_GLOI",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_GRIR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_GRIR_N",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_GRIR_S",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_LGS_TL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_LOG_D",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_LOG_R",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_LOG_S",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_LOG_T",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_LOG_TS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_LOG_V",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_LSUMAP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_LSUMAR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_LSUMGL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_NO030H",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_NOPOST",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_PARMAX",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": "X"
+        },
+        {
+            "SelName": "P_PARPRC",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_PARSEL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_PARSVG",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_PBI",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_PBINAM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_PDDATE",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_PDEF",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_PPDATE",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_PPERID",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_PPOST",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_PRDATE",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_PROTG",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_PRPER",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_PTEST",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_REASON",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_RESET",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_TCCODE",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_VAREA",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_VDATE",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": "X"
+        },
+        {
+            "SelName": "P_XDOREM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_YEAR_C",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "S_APOIA",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "S_AROIA",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "S_BALACC",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "S_CCODE",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "S_CURR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "S_DOCNR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "S_FYEAR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "S_GLOIA",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "S_GRIR_A",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "S_LGSOIA",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "S_LSUMAP",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "S_LSUMAR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "S_LSUMGL",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_OKEY",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_WITEM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_WLIST",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        }
+    ]
+},
+"AFBP":{
+    "Report": "RAPOST2001",
+    "Return": "Sucess.",
+    "ValueTab": [
+        {
+            "SelName": "P_AGAIN",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_ANZ",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_BUKRS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": "X"
+        },
+        {
+            "SelName": "P_BUPER",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": "X"
+        },
+        {
+            "SelName": "P_CHECK",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_CHECKP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_EINZL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_GJAHR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": "X"
+        },
+        {
+            "SelName": "P_LDGRP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_MAFAL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_NEXT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_RSTART",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_SCHED",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_TEST",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_VARI",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_ZERO",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "S_ANLN1",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "S_ANLN2",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_OKEY",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_WITEM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_WLIST",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        }
+    ]
+},
+ "AFAB":{
+    "Report": "RAPOST2000",
+    "Return": "Sucess.",
+    "ValueTab": [
+        {
+            "SelName": "P_AGAIN",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "X",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_BUKRS",
+            "Kind": "S",
+            "Sign": "I",
+            "Option": "BT",
+            "Low": "2000",
+            "High": "5000",
+            "Obligatory": "X"
+        },
+        {
+            "SelName": "P_BUPER",
+            "Kind": "P",
+            "Sign": "I",
+            "Option": "EQ",
+            "Low": "07",
+            "High": "",
+            "Obligatory": "X"
+        },
+        {
+            "SelName": "P_CHECK",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_CHECKP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_EINZL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_GJAHR",
+            "Kind": "P",
+            "Sign": "I",
+            "Option": "EQ",
+            "Low": "2018",
+            "High": "",
+            "Obligatory": "X"
+        },
+        {
+            "SelName": "P_LDGRP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_MAFAL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_NEXT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_NOSP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_RFCGR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_RSTART",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_TEST",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_VARI",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_ZERO",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "S_ANLN1",
+            "Kind": "S",
+            "Sign": "I",
+            "Option": "BT",
+            "Low": "3000",
+            "High": "3005",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "S_ANLN2",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_OKEY",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_WITEM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "WF_WLIST",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        }
+    ]
+},
+"CJI3":{
+    "Report": "RKPEP003",
+    "Return": "Sucess.",
+    "ValueTab": [
+        {
+            "SelName": "CN_ACTVT",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_AKTDT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_AMODI",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_ARCDT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_ARCHV",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_COREP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_DBDAT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_HIEKZ",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_IMPRP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_IMTP",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_IMTPJ",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_KOKRS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_MATNR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_MAXL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_NETNR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_PROFD",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_PROFP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_PROJN",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_PSPNR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_SELKY",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_SELVS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_STAT1",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_STAT2",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_STAT3",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_STAT4",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_STD",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_STUFE",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_SUBKZ",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_VBELN",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_VERDT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_VIEW",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_VSEL1",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_VSEL2",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "CN_VSNMR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "G_TNAME",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "G_VALUES",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "G_WRTTP",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "KOAGR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_ACTVRS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_AROBJ",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_DBCON",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_DBCONX",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_DISINT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_DISVAR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_FIXVAR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_GROBJ",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_GRPTAB",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_HANA",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_HIER",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_IMOUT",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_INFSYS",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_ITEM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_MAXSEL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_MKSTAR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_MOBJ",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_MSELL",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_NOZERO",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_OBJ",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_SUMTAB",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_TABNM",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_TCODE",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_TREE",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_UOBJNR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_UPAROB",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_USEAR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_USEDB",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_UUSPOB",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_VALTYP",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_XOBJNR",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "P_XPAROB",
+            "Kind": "P",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "R_ARSEL",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "R_BUDAT",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        },
+        {
+            "SelName": "R_KSTAR",
+            "Kind": "S",
+            "Sign": "",
+            "Option": "",
+            "Low": "",
+            "High": "",
+            "Obligatory": ""
+        }
+    ]
+}
+}

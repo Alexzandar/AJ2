@@ -1,0 +1,355 @@
+{% extends "etl/base.html" %}
+
+{% block additional_styles %}
+<link href="/static/etl/css/bootstrap-datepicker.css" rel="stylesheet">
+<style type="text/css">
+	.datepicker {
+		border: 1px solid #e2e2e4;
+	}
+
+	.CboDesTool {
+		width: 160px;
+	}
+
+	.center {
+		text-align: center;
+	}
+	.variant-container .form-group{
+		margin-bottom: 20px;
+	}
+</style>
+{% endblock %}
+
+{% block content %}
+
+<div class="col-lg-12">
+	<section class="panel">
+		<header class="panel-heading">
+			Manage Dynamic Variants
+		</header>
+		<div class="panel-body">
+			<div class="row variant-container">
+
+				<div class="col-md-5">
+					<div class="form-group row">
+						<label class="col-sm-2 col-form-label" for="cust_name">Customer</label>
+						<div class="col-xs-10">
+							<select name="cust_name" class="form-control" id="cust_name" required>
+								{% for customer in customers %}
+								<option value="{{ customer.id }}">{{ customer.name }}</option>
+								{% endfor %}
+							</select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-2 col-form-label" for="system">System</label>
+						<div class="col-xs-10">
+						<select id="system" name="system" class="form-control" required>
+							<option>Select</option>
+							<option value="AMS">AMS</option>
+							<option value="AMS">S/4 Hana</option>
+						</select></div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-2 col-form-label" for="client">Client</label>
+						<div class="col-xs-10">
+						<select id="client" name="client" class="form-control" required>
+							<option value="000">000</option>
+							<option value="001">001</option>
+							<option value="002">002</option>
+						</select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-2 col-form-label" for="t_code">TCode</label>
+						<div class="col-sm-10">
+						<input type="text" id="t_code" name="t_code" class="form-control typeahead" required>
+					</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-2 col-form-label" for="bot_id">BOT ID</label>
+						<div class="col-sm-10">
+						<input type="text" id="bot_id" name="bot_id" class="form-control" required>
+					</div>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="program_name">Program Name</label>
+						<div class="col-sm-9">
+						<input type="text" id="program_name" name="program_name" class="form-control" required>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="variant_name">Variant Name</label>
+						<div class="col-sm-9">
+						<input type="text" class="form-control" name="variant_name" id="variant_name" required>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="variant_desc">Description</label>
+						<div class="col-sm-9">
+						<input type="text" class="form-control" name="variant_desc" id="variant_desc" required>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="variant_status">Status</label>
+						<div class="col-sm-9">
+						<div class="">
+							<label class="radio-inline">
+								<input type="radio" name="variant_status" value="D" required checked> Dynamic
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="variant_status" value="S" required> Static
+							</label>
+						</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="variant_status">Output Type</label>
+						<div class="col-sm-9">
+					<div class="">
+							<label class="radio-inline">
+								<input type="checkbox" name="log_file" value="true" required checked> Log
+							</label>
+							<label class="radio-inline">
+								<input type="checkbox" name="spool_file" value="S" required> Spool
+							</label>
+					</div>
+					</div>
+					</div>
+				</div>
+				<div class="col-md-12 table-container" style="padding-top: 20px;display: none;">
+					<table class="table table-striped table-hover table-bordered" id="clientMaster">
+						<thead>
+							<tr>
+									<th></th>
+									<th>Name</th>
+									<th>Type</th>
+									<th>Option</th>
+									<th>Sign</th>
+									<th>Low</th>
+									<th>High</th>
+								<th>
+									<center>Actions</center>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
+					<!-- <div class="col-md-12"><a type="submit" class="btn btn-primary pull-right row" id="add_row"
+							style="width:60px">+</a>
+					</div> -->
+
+					
+				</div><div class="col-md-12"><button type="submit" class="btn btn-primary pull-right row"
+					style="width: 60px;margin-top: 5px;margin-right: 0;">SAVE</button>
+			</div>
+			</div>
+
+		</div>
+</div>
+</section>
+</div>
+
+
+{% endblock %}
+
+
+{% block jsfooter %}
+<link href="/static/etl/css/select2.min.css" rel="stylesheet" />
+<script src="/static/etl/js/select2.min.js"></script>
+<script src="/static/etl/js/bootstrap-datepicker.js"></script>
+
+<script type="text/javascript">
+
+
+	$(document).ready(function () {
+
+		$(document).on("click", ".btnEdit", function () {
+			var id = $(this).parents("tr").find("td:eq(4)").html();
+			$("#cust_id").val(id);
+			$("#cust_name").val($(this).parents("tr").find("td:eq(0)").html());
+			$("#cust_desc").val($(this).parents("tr").find("td:eq(1)").html());
+			$("#cust_activation_date").val($(this).parents("tr").find("td:eq(3)").html());
+			var $radios = $('input:radio[name=cust_status]');
+			var status = $(this).parents("tr").find("td:eq(2)").html().trim();
+			if (status == 'Active')
+				$radios.filter('[value=Y]').prop('checked', true);
+			else
+				$radios.filter('[value=N]').prop('checked', true);
+			$('#editCustomerModal').modal();
+		});
+		addSerialNumber();
+
+		$(document).on("change", "input[name='variant_status']", function (e){
+		var status = $("input[name=variant_status]:checked").val();
+		if(status == 'S'){
+			$(".option-container").hide();
+			$(".table-container").hide();
+		}
+		else{
+			$(".option-container").show();
+			$(".table-container").show();
+		}
+	});
+	});
+
+	function reload_window() {
+		window.location = '';
+	}
+
+	var substringMatcher = function (strs) {
+      return function findMatches(q, cb) {
+        var matches, substringRegex;
+
+        // an array that will be populated with substring matches
+        matches = [];
+
+        // regex used to determine if a string contains the substring `q`
+        substrRegex = new RegExp(q, 'i');
+
+        // iterate through the pool of strings and for any string that
+        // contains the substring `q`, add it to the `matches` array
+        $.each(strs, function (i, str) {
+          if (substrRegex.test(str)) {
+            matches.push(str);
+          }
+        });
+
+        cb(matches);
+      };
+    };
+
+    var states = ['KE5Z', 'KKAI', 'KKAJ', 'CJI5', 'KE5B',
+      'F13E', 'F.13', 'FAGLF101', 'FAGL_FCV', 'AFBP', 'AFAB', 'CJI3'
+    ];
+    var screen_fields;
+    $.getJSON("/static/etl/data/screen_fields.json", function (json) {
+      screen_fields = json;
+    });
+
+    $('.typeahead').typeahead({
+      hint: true,
+      highlight: true,
+      minLength: 1
+    },
+      {
+        name: 'states',
+        source: substringMatcher(states)
+      });
+    $('.typeahead').on('typeahead:selected', function (evt, item) {
+      // do what you want with the item here
+	  $("#program_name").val('FAA_DEPRECIATION_POST')
+	  $("#bot_id").val('FABOST');
+      current_fields = screen_fields[item];
+      if (current_fields) {
+
+        // generate the table for screen fields here
+
+        $("#clientMaster > tbody tr").remove();
+        var sel_values = current_fields.ValueTab.map(a => a.SelName);
+        $.each(current_fields.ValueTab, function (index, value) {
+          // if (value.Obligatory) {
+            $('#clientMaster > tbody:last-child').append('<tr class="table_row">\
+            <td>1</td>\
+            <td>\
+              <select class="form-control sel-name">\
+              </select>\
+            </td>\
+            <td>\
+              <select class="form-control sel-type">\
+                <option>P</option>\
+                <option>S</option>\
+              </select>\
+            </td>\
+            <td><select class="form-control sel-option">\
+                <option>EQ</option>\
+                <option>GE</option>\
+                <option>BT</option>\
+                <option>NE</option>\
+                <option>EQ</option>\
+              </select>\
+            </td>\
+            <td><select class="form-control sel-sign">\
+                <option>I</option>\
+                <option>E</option>\
+              </select>\
+            </td>\
+            <td>\
+              <input type="text" class="form-control low-field" value="">\
+            </td>\
+            <td>\
+              <input type="text" class="form-control high-field" value="">\
+            </td>\
+            <td>\
+              <center>\
+              </center>\
+            </td>\
+          </tr>');
+          // }
+        });
+
+        $('.sel-name').each(function (oi) {
+          var counter = 0;
+          $(this).html($.map(sel_values, function (i, index) {
+            // if (current_fields.ValueTab[index].Obligatory)
+              counter++;
+            // if (current_fields.ValueTab[index].Obligatory && oi == counter - 1) {
+            if (oi == counter - 1) {
+              return '<option value="' + i + '" selected>' + i + '</option>';
+            }
+            else
+              return '<option value="' + i + '">' + i + '</option>';
+          }).join('')
+          )
+        });
+
+        $('.sel-type').each(function (oi) {
+			if(current_fields.ValueTab[oi].Kind)
+          		$(this).val(current_fields.ValueTab[oi].Kind);
+				  
+        });
+
+        $('.sel-option').each(function (oi) {
+			if(current_fields.ValueTab[oi].Option)
+          		$(this).val(current_fields.ValueTab[oi].Option);
+        });
+
+        $('.sel-sign').each(function (oi) {
+			if(current_fields.ValueTab[oi].Sign)
+          		$(this).val(current_fields.ValueTab[oi].Sign);
+        });
+
+        $('.low-field').each(function (oi) {
+			if(current_fields.ValueTab[oi].Low)
+          		$(this).val(current_fields.ValueTab[oi].Low);
+        });
+
+        $('.high-field').each(function (oi) {
+			if(current_fields.ValueTab[oi].High)
+          		$(this).val(current_fields.ValueTab[oi].High);
+        });
+
+
+
+        addSerialNumber();
+        $(".table-container").show();
+        
+      $("html").getNiceScroll().resize();
+      }
+	});
+	
+	function addSerialNumber() {
+      $('table tr').each(function (index) {
+        $(this).find('td:nth-child(1)').html(index);
+      });
+    }
+
+    addSerialNumber();
+
+</script>
+{% endblock %}

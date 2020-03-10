@@ -1,0 +1,311 @@
+{% extends "etl/base.html" %}
+
+{% block additional_styles %}
+<link href="/static/etl/css/bootstrap-datepicker.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+<div class="col-lg-12">
+	<section class="panel">
+		<header class="panel-heading">
+			SAP System Settings
+			<button class="btn btn-primary pull-right" onclick="addCustomerForm()">Add New</button>
+		</header>
+		<div class="panel-body">
+			<div class="col-sm-3 pull-right row">
+				<form method="GET" action="/actionbot/settings/sap">
+					<div class="form-inline">
+						<span class="pull-right">
+							<input type="text" placeholder="Search" name="search" class="form-control" required="required" value="{{ query }}"/>
+							<button class="btn btn-warning btn-sm" type="submit" id="searchErp">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+							<a class="btn btn-sm btn-warning" href="/actionbot/settings/sap" title="Refresh"><span
+									class="glyphicon glyphicon-refresh"></span> </a>
+						</span>
+					</div>
+				</form>
+			</div>
+			<table class="table table-striped table-hover table-bordered" id="remoteMaster">
+				<thead>
+					<tr>
+						<th>User Name</th>
+						<th>URL</th>
+						<th>User</th>
+						<th>Configuration</th>
+						<th>
+							<center>Actions</center>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for setting in settings %}
+					<tr>
+						<td>{{ setting.user_name }}</td>
+						<td>{{ setting.url }}</td>
+						<td>{{ setting.user.name }}</td>
+						<td>{% if setting.configuration == 'P' %} PI/PO {% else %} Gateway {% endif %} </td>
+						<td class="hide">{{ setting.setting_id }}</td>
+						<td class="hide">{{ setting.user_id }}</td>
+						<td class="hide">{{ setting.password }}</td>
+
+
+						<td>
+							<center><a class="btn btn-xs btn-primary btnEdit" title="Edit"
+									rel="{{ setting.setting_id }}"><span class="glyphicon glyphicon-edit"></span></a> <a
+									class="btn btn-xs btn-danger btnDel"
+									href="/actionbot/settings/sap/delete/{{ setting.setting_id }}" title="Delete"><span
+										class="glyphicon glyphicon-trash"></span> </a></center>
+						</td>
+					</tr>
+					{% endfor %}
+
+					{% if not settings %}
+					<tr>
+						<td colspan="5"> <div class="col-md-12 center"> No records found!</div></td>
+					</tr>
+					{% endif %}
+				</tbody>
+			</table>
+
+
+			<div class="text-center">
+				{% if settings.has_other_pages %}
+				<ul class="pagination">
+					{% if settings.has_previous %}
+					<li><a href="?page={{ settings.previous_page_number }}">&laquo;</a></li>
+					{% else %}
+					<li class="disabled"><span>&laquo;</span></li>
+					{% endif %}
+					{% for i in settings.paginator.page_range %}
+					{% if settings.number == i %}
+					<li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+					{% else %}
+					<li><a href="?page={{ i }}">{{ i }}</a></li>
+					{% endif %}
+					{% endfor %}
+					{% if settings.has_next %}
+					<li><a href="?page={{ settings.next_page_number }}">&raquo;</a></li>
+					{% else %}
+					<li class="disabled"><span>&raquo;</span></li>
+					{% endif %}
+				</ul>
+				{% endif %}
+			</div>
+		</div>
+	</section>
+</div>
+
+
+
+<input type="hidden" id="HdnCid" />
+
+<div class="modal fade " data-backdrop="static" data-keyboard="false" id="myModal" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h5 class="modal-title">Cadency - Manage Customers</h5>
+			</div>
+			<div class="modal-body">
+
+			</div>
+			<div class="modal-footer footer-button">
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal popup for editing the customer information -->
+<div class="modal fade " data-backdrop="static" data-keyboard="false" id="sapSettingModal" tabindex="-1" role="dialog"
+	aria-labelledby="sapSettingModal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h5 class="modal-title">SAP System Settings</h5>
+			</div>
+			<form class="form-horizontal" role="form" method="post" id="customerForm"
+				action="/actionbot/masters/save-customer">
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-lg-12">
+						<section class="panel">
+
+							<div class="col-lg-12">
+									{% csrf_token %}
+
+									<div class="form-group">
+										<label class="control-label" for="user">User</label>
+										<select name="user" class="form-control" id="user" required>
+											<option value="">Select</option>
+											{% for client in clients %}
+											<option value="{{ client.customer_id }}">{{ client.name }}</option>
+											{% endfor %}
+										</select>
+									</div>
+									<div class="form-group">
+										<input type="hidden" name="setting_id" id="setting_id" class="form-control">
+										<label class="control-label" for="user_name">User Name</label>
+										<input type="text" id="user_name" name="user_name" class="form-control" autocomplete="off"	required>
+									</div>
+									<div class="form-group">
+										<label class="control-label" for="password">Password</label>
+										<span toggle="#password" class="fa fa-fw fa-eye field_icon toggle-password"></span>
+										<input type="password" class="form-control" id="password" name="password" required>
+									</div>
+									<div class="form-group">
+										<label class="control-label" for="url">URL</label>
+										<input type="text" class="form-control" id="url" name="url" required>
+									</div>
+									<div class="form-group">
+										<label class="control-label" for="configuration">Configuration</label>
+										<div class="radio">
+											<label class="radio-inline">
+												<input type="radio" name="configuration" value="P" required> PI/PO
+											</label>
+											<label class="radio-inline">
+												<input type="radio" name="configuration" value="G" required> Gateway
+											</label>
+										</div>
+									</div>
+							</div>
+
+						</section>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer footer-button">
+				<button type="submit" class="btn btn-primary" id="btnSave">SAVE</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+
+			</div>
+		</form>
+		</div>
+	</div>
+</div>
+<!-- Customer information edit popup ends here -->
+{% endblock %}
+
+
+{% block jsfooter %}
+<link href="/static/etl/css/select2.min.css" rel="stylesheet" />
+<script src="/static/etl/js/select2.min.js"></script>
+<script src="/static/etl/js/bootstrap-datepicker.js"></script>
+
+
+
+<style>
+	.CboDesTool {
+		width: 160px;
+	}
+
+	.center {
+		text-align: center;
+	}
+</style>
+
+<script type="text/javascript">
+
+	// Popup when clicking the add new customer button
+	function addCustomerForm() {
+		document.getElementById("customerForm").reset();
+		$("#cust_id").val('');
+		$('#sapSettingModal').modal();
+	}
+
+	$(document).ready(function () {
+
+		$(document).on("click", ".btnEdit", function () {
+			var id = $(this).parents("tr").find("td:eq(4)").html();
+			$("#setting_id").val(id);
+			$("#user_name").val($(this).parents("tr").find("td:eq(0)").html());
+			$("#url").val($(this).parents("tr").find("td:eq(1)").html());
+			$("#password").val($(this).parents("tr").find("td:eq(6)").html());
+			$("#user").val(parseInt($(this).parents("tr").find("td:eq(5)").html()));
+			var $radios = $('input:radio[name=configuration]');
+			var configuration = $(this).parents("tr").find("td:eq(3)").html().trim();
+			if(configuration == 'PI/PO')
+				$radios.filter('[value=P]').prop('checked', true);
+			else
+				$radios.filter('[value=G]').prop('checked', true);
+			$('#sapSettingModal').modal();
+		});
+
+	});
+
+
+	var frm = $('#customerForm');
+
+    frm.submit(function (e) {
+        e.preventDefault();
+		var setting_id = $("#setting_id").val();
+		var user = $("#user").val();
+		var user_name = $("#user_name").val();
+		var password = $("#password").val();
+		var url = $("#url").val();
+		var configuration = $("input[name='configuration']:checked").val();
+
+
+		var obj = {
+			settingID: setting_id,
+			userId: user,
+			userName: user_name,
+			password: password,
+			url: url,
+			configuration: configuration
+		};
+
+		$("#btnSave span").html('Please wait');
+
+		$("#btnSave").attr("disabled", "disabled");
+
+		var formdata = JSON.stringify(obj);
+
+		$.ajax({
+			type: "GET",
+			url: "/actionbot/settings/save-sap/",
+			data: {
+				formdata: formdata
+			},
+			dataType: 'json',
+			success: function (response) {
+				if (response.status == "200") {
+
+					$("#sapSettingModal").modal('hide');
+					$('#myModal .modal-body').html(response.message);
+					$('#myModal .footer-button').html('<button class="btn btn-success" data-dismiss="modal" type="button" onclick=reload_window()>Close</button>');
+					$('#myModal').modal();
+
+
+				} else if (response.status == "400") {
+					$('#myModal .modal-body').html(response.message);
+					$('#myModal .footer-button').html('<button class="btn btn-danger" data-dismiss="modal" type="button">Close</button>');
+					$('#myModal').modal();
+
+				}
+				$("#btnSave").removeAttr('disabled');
+				$("#btnSave span").html('Save');
+			}
+		});
+});
+
+	function reload_window() {
+		window.location = '';
+	}
+
+	$(".btnDel").click(function(e) {  
+	e.preventDefault();
+    var link =  $(this).attr('href');
+	
+	 if (confirm("Delete this record..Are you Sure ?")) 
+		{
+        window.location = link;
+		} 
+	});
+
+</script>
+{% endblock %}

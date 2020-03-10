@@ -1,0 +1,448 @@
+{% extends "etl/base.html" %}
+
+{% block content %}
+<section class="panel">
+    <header class="panel-heading  m-bot15">
+      Automation Library
+			<a class="btn btn-primary pull-right" href="/actionbot/masters/t-code/create">Add New</a>
+    </header>
+    <div class="panel-body">
+<div class="col-lg-12">
+    <ul class=tree>
+    <li>
+      <span class="expander-li">SAP ECC</span>
+      <div class="expander expanded"></div>
+      <ul class="expanded">
+        <li>
+            <span class="expander-li">Fixed Asset</span>
+          <div class="expander expanded"></div>
+          <ul class="expanded">
+              <!-- {% for key, item in data.items %} -->
+            <li>
+                <span class="expander-li">KE5Z - RCOPCA02</span>
+                <div class="expander"></div>
+                <ul>  
+                       
+                    <li>ACTIV</li>  
+                       
+                    <li>AFABE</li>  
+                       
+                    <li>ARC_OBJ</li>  
+                       
+                    <li>BUKRS</li>  
+                       
+                    <li>DOCCT</li>  
+                       
+                    <li>DOCNR</li>  
+                       
+                    <li>DRCRK</li>  
+                       
+                    <li>EPRCTR</li>  
+                       
+                    <li>HRKFT</li>  
+                       
+                    <li>KOKRS</li>  
+                       
+                    <li>KOSTL</li>  
+                       
+                    <li>LOG_GRP</li>  
+                       
+                    <li>LR_FILES</li>  
+                       
+                    <li>MATNR</li>  
+                       
+                    <li>NO_RRINT</li>  
+                       
+                    <li>POPER</li>  
+                       
+                    <li>PPRCTR</li>  
+                       
+                    <li>PRCTR</li>  
+                       
+                    <li>P_VARI</li>  
+                       
+                    <li>RACCT</li>  
+                       
+                    <li>RASSC</li>  
+                       
+                    <li>READ_AR</li>  
+                       
+                    <li>READ_AS</li>  
+                       
+                    <li>READ_DB</li>  
+                       
+                    <li>REFDOCCT</li>  
+                       
+                    <li>REFDOCNR</li>  
+                       
+                    <li>REPMATNR</li>  
+                       
+                    <li>RFAREA</li>  
+                       
+                    <li>RHOART</li>  
+                       
+                    <li>RLDNR</li>  
+                       
+                    <li>RMVCT</li>  
+                       
+                    <li>RRCTY</li>  
+                       
+                    <li>RSCOPE</li>  
+                       
+                    <li>RTCUR</li>  
+                       
+                    <li>RUNIT</li>  
+                       
+                    <li>RVERS</li>  
+                       
+                    <li>RYEAR</li>  
+                       
+                    <li>SBUKRS</li>  
+                       
+                    <li>SFAREA</li>  
+                       
+                    <li>SHOART</li>  
+                       
+                    <li>STAGR</li>  
+                       
+                    <li>VERSA</li>  
+                       
+                    <li>WERKS</li>  
+                    
+                  </ul>
+              </li>
+              <li>
+                <span class="expander-li"></span>
+                <div class="expander">KKAI - SAPKKA01</div>
+                <ul class="expanded">  
+                       
+                    <li>ABGRJAHR</li>  
+                       
+                    <li>ABGRMONA</li>  
+                       
+                    <li>ABGRNORM</li>  
+                       
+                    <li>ABGRPLAN</li>  
+                       
+                    <li>ABGRTEST</li>  
+                       
+                    <li>ABGRVERS</li>  
+                       
+                    <li>ACTIONLG</li>  
+                       
+                    <li>ANZEABGS</li>  
+                       
+                    <li>ANZEFIBU</li>  
+                       
+                    <li>ANZEIGEN</li>  
+                       
+                    <li>ANZWBUKR</li>  
+                       
+                    <li>ANZWKOKR</li>  
+                       
+                    <li>ERGPROT</li>  
+                       
+                    <li>FIBUKONT</li>  
+                       
+                    <li>JOBPLANG</li>  
+                       
+                    <li>KOKRS</li>  
+                       
+                    <li>ORG_REP</li>  
+                       
+                    <li>P_A_VARI</li>  
+                       
+                    <li>P_NO0VAL</li>  
+                       
+                    <li>P_SUPANZ</li>  
+                       
+                    <li>P_SUPPIN</li>  
+                       
+                    <li>RFCGROUP</li>  
+                       
+                    <li>RFCPROC</li>  
+                       
+                    <li>STOREMSG</li>  
+                       
+                    <li>TCODE</li>  
+                       
+                    <li>WF_OKEY</li>  
+                       
+                    <li>WF_WITEM</li>  
+                       
+                    <li>WF_WLIST</li>  
+                       
+                    <li>WITHIMSG</li>  
+                       
+                    <li>WROBJFRC</li>  
+                       
+                    <li>ZEITFIBU</li>  
+                    
+                  </ul>
+              </li>
+              <li>
+                  <span class="expander-li"></span>
+                  <div class="expander">KKAJ - SAPKKA00</div>
+                  <ul class="expanded">  
+                       
+                      <li>ABGRJAHR</li>  
+                         
+                      <li>ABGRMONA</li>  
+                         
+                      <li>ABGRNORM</li>  
+                         
+                      <li>ABGRPLAN</li>  
+                         
+                      <li>ABGRTEST</li>  
+                         
+                      <li>ABGRVERS</li>  
+                         
+                      <li>ACTIONLG</li>  
+                         
+                      <li>ANZEABGS</li>  
+                         
+                      <li>ANZEFIBU</li>  
+                         
+                      <li>ANZEIGEN</li>  
+                         
+                      <li>ANZWBUKR</li>  
+                         
+                      <li>ANZWKOKR</li>  
+                         
+                      <li>ERGPROT</li>  
+                         
+                      <li>FIBUKONT</li>  
+                         
+                      <li>JOBPLANG</li>  
+                         
+                      <li>KOKRS</li>  
+                         
+                      <li>ORG_REP</li>  
+                         
+                      <li>P_A_VARI</li>  
+                         
+                      <li>P_NO0VAL</li>  
+                         
+                      <li>P_SUPANZ</li>  
+                         
+                      <li>P_SUPPIN</li>  
+                         
+                      <li>RFCGROUP</li>  
+                         
+                      <li>RFCPROC</li>  
+                         
+                      <li>STOREMSG</li>  
+                         
+                      <li>TCODE</li>  
+                         
+                      <li>WF_OKEY</li>  
+                         
+                      <li>WF_WITEM</li>  
+                         
+                      <li>WF_WLIST</li>  
+                         
+                      <li>WITHIMSG</li>  
+                         
+                      <li>WROBJFRC</li>  
+                         
+                      <li>ZEITFIBU</li>  
+                      
+                    </ul>
+                  </li>
+                  <li>
+                      <span class="expander-li">CJI5 - RKPEP005</span>
+                      <div class="expander"></div>
+                      <ul>  
+                       
+                          <li>CN_ACTVT</li>  
+                             
+                          <li>CN_AKTDT</li>  
+                             
+                          <li>CN_AMODI</li>  
+                             
+                          <li>CN_ARCDT</li>  
+                             
+                          <li>CN_ARCHV</li>  
+                             
+                          <li>CN_COREP</li>  
+                             
+                          <li>CN_DBDAT</li>  
+                             
+                          <li>CN_HIEKZ</li>  
+                             
+                          <li>CN_IMPRP</li>  
+                             
+                          <li>CN_IMTP</li>  
+                             
+                          <li>CN_IMTPJ</li>  
+                             
+                          <li>CN_KOKRS</li>  
+                             
+                          <li>CN_MATNR</li>  
+                             
+                          <li>CN_MAXL</li>  
+                             
+                          <li>CN_NETNR</li>  
+                             
+                          <li>CN_PROFD</li>  
+                             
+                          <li>CN_PROFP</li>  
+                             
+                          <li>CN_PROJN</li>  
+                             
+                          <li>CN_PSPNR</li>  
+                             
+                          <li>CN_SELKY</li>  
+                             
+                          <li>CN_SELVS</li>  
+                             
+                          <li>CN_STAT1</li>  
+                             
+                          <li>CN_STAT2</li>  
+                             
+                          <li>CN_STAT3</li>  
+                             
+                          <li>CN_STAT4</li>  
+                             
+                          <li>CN_STD</li>  
+                             
+                          <li>CN_STUFE</li>  
+                             
+                          <li>CN_SUBKZ</li>  
+                             
+                          <li>CN_VBELN</li>  
+                             
+                          <li>CN_VERDT</li>  
+                             
+                          <li>CN_VIEW</li>  
+                             
+                          <li>CN_VSEL1</li>  
+                             
+                          <li>CN_VSEL2</li>  
+                             
+                          <li>CN_VSNMR</li>  
+                             
+                          <li>G_TNAME</li>  
+                             
+                          <li>G_VALUES</li>  
+                             
+                          <li>G_WRTTP</li>  
+                             
+                          <li>KOAGR</li>  
+                             
+                          <li>P_ACTVRS</li>  
+                             
+                          <li>P_AROBJ</li>  
+                             
+                          <li>P_DISVAR</li>  
+                             
+                          <li>P_FIXVAR</li>  
+                             
+                          <li>P_INFSYS</li>  
+                             
+                          <li>P_ITEM</li>  
+                             
+                          <li>P_MAXSEL</li>  
+                             
+                          <li>P_NOZERO</li>  
+                             
+                          <li>P_OBJ</li>  
+                             
+                          <li>P_OPEN</li>  
+                             
+                          <li>P_TCODE</li>  
+                             
+                          <li>P_USEAR</li>  
+                             
+                          <li>P_USEDB</li>  
+                             
+                          <li>P_VALTYP</li>  
+                             
+                          <li>R_ARSEL</li>  
+                             
+                          <li>R_KSTAR</li>  
+                             
+                          <li>R_OBDAT</li>  
+                          
+                        </ul>
+                      </li>
+                      <li>
+                          <span class="expander-li">CJI5 - RKPEP005</span>
+                          <div class="expander"></div>
+                          </li>
+                <!-- {% endfor %} -->
+          </ul>
+        </li>
+        <li>
+            <span class="expander-li">GL</span>
+          <div class="expander expanded"></div>
+          <ul class="expanded">
+            <li>FAGL_FC_VAL - FAGL_FC_VALUATION
+              </li>
+            <li>FAGL_FC_TRANS - FAGL_FC_TRANSLATION</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+        <span class="expander-li">Oracle</span>
+        <div class="expander"></div>
+        <ul>
+          <li>
+              <span class="expander-li">Fixed Asset</span>
+            <div class="expander"></div>
+            <ul>
+              <li>FADR - FA Derpeciation Run</li>
+            </ul>
+          </li>
+          <li>
+              <span class="expander-li">GL</span>
+            <div class="expander"></div>
+            <ul>
+              <li>FAGL_FC_VAL - FAGL_FC_VALUATION</li>
+              <li>FAGL_FC_TRANS - FAGL_FC_TRANSLATION</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+  </ul>
+</div>
+</div>
+</section>
+
+{% endblock %}
+
+
+{% block jsfooter %}
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".btnEdit").click(function () {
+
+      var id = $(this).attr('rel');
+      $('#erpid').val(id);
+      $('#erpname').val($(this).closest('tr').find("td:eq(0)").text());
+      $('#erpdesc').val($(this).closest('tr').find("td:eq(1)").text());
+
+
+      $("#myModal").modal({
+
+        keyboard: false
+
+      });
+
+    });
+
+    $(".btnDel").click(function (e) {
+      e.preventDefault();
+      var link = $(this).attr('href');
+
+      if (confirm("Delete this record..Are you Sure ?")) {
+        window.location = link;
+      }
+    });
+
+  });
+
+</script>
+
+{% endblock %}

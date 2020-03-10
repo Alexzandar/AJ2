@@ -1,0 +1,155 @@
+{% extends "etl/base.html" %}
+
+{% block additional_styles %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="col-lg-12">
+	<section class="panel">
+		<header class="panel-heading">
+			View Output
+		</header>
+		<div class="panel-body">
+			<div class="row variant-container">
+
+
+
+				<div class="col-md-8">
+					<div class="form-group row">
+						<label class="col-lg-2 col-sm-2 control-label">Customer</label>
+						<div class="col-sm-7">
+						<select id="client" name="client" class="form-control" required>
+							<option value="OR">ORSTED</option>
+							<option value="OR">Trintech</option>
+
+						</select>
+						</div>
+						<div class="col-sm-3">
+							<button class="btn btn-primary" id="btn-view">View All</button>
+						</div>
+
+					</div>
+
+
+
+				</div>
+
+
+
+
+
+
+</div>
+			<br><br>
+			<div class="row" id="div_Results" style="display:none">
+				<div class="col-sm-4">
+                      <section class="panel" style="border: 1px solid #ddd;">
+                          <header class="panel-heading">
+                              CloseBOT Results
+                          </header>
+                          <div class="list-group" id="Result-File-Set">
+
+                          </div>
+                      </section>
+
+
+				</div>
+				<div class="col-sm-8">
+
+
+							<pre id="OutFile">
+							</pre>
+
+
+				</div>
+			</div>
+
+
+		</div>
+</section>
+</div>
+
+
+{% endblock %}
+
+
+{% block jsfooter %}
+<link href="/static/etl/css/select2.min.css" rel="stylesheet" />
+<script src="/static/etl/js/select2.min.js"></script>
+<script src="/static/etl/js/bootstrap-datepicker.js"></script>
+
+<script type="text/javascript">
+
+
+	$(document).ready(function () {
+
+
+$("#OutFile").hide();
+		$(document).on("click", "#btn-view", function () {
+		var obj = {
+			fName: ''
+		};
+		var formdata = JSON.stringify(obj);
+			$.ajax({
+				type: "GET",
+				url: "/actionbot/masters/logfiles/",
+				data: {
+					formdata: formdata
+				},
+				dataType: 'json',
+				success: function (response) {
+					if (response.status == "200") {
+
+						$("#div_Results").css("display", "block");
+
+						var file_list='';
+						for (i = 0; i < response.file_list.length; i++)
+						{
+							file_list = file_list + '<a class="list-group-item" href="#" onclick=GetFileContent("'+response.file_list[i]+'")>'+response.file_list[i]+'</a>';
+
+
+						}
+						$("#Result-File-Set").html(file_list);
+
+					} else if (response.status == "400") {
+
+					}
+
+				}
+			});
+		});
+
+    });
+
+	
+function GetFileContent(fname)
+{
+		var obj = {
+			fName: fname
+		};
+		var formdata = JSON.stringify(obj);
+	$.ajax({
+				type: "GET",
+				url: "/actionbot/masters/results/",
+				data: {
+					formdata: formdata
+				},
+				dataType: 'json',
+				success: function (response) {
+					if (response.status == "200") {
+
+					$("#OutFile").show();
+
+						$("#OutFile").html(response.f_content);
+
+
+					}
+
+				}
+			});
+}
+
+</script>
+{% endblock %}
